@@ -138,6 +138,37 @@ header.scrolled .nav-menu a:before {
   color: var(--gold);
 }
 
+/* Logo Container */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Image */
+.logo img {
+  height: 55px;              /* Main size */
+  width: auto;
+  object-fit: contain;
+  transition: all 0.4s ease;
+}
+
+/* Hover Effect (Subtle Premium Zoom) */
+.logo img:hover {
+  transform: scale(1.08);
+}
+
+/* If Navbar is Transparent Over Hero */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Optional Gold Glow on Hover */
+.logo img:hover {
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.6));
+}
+
 .nav-menu {
   display: flex;
   list-style: none;
