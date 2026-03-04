@@ -1,165 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GIS CO. LTD – Projects</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | GIS CO. LTD</title>
+    <!-- fonts & css (unchanged) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- small logo style (same as other pages) -->
+    <style>
+        .logo-text { font-size: 1.8rem; font-weight: 700; color: var(--gold, #c8a645); line-height: 1.2; }
+        .logo-text span { color: #fff; font-weight: 400; font-size: 1.2rem; display: block; }
+        @media (min-width: 768px) { .logo-text span { display: inline; margin-left: 0.5rem; } }
+    </style>
 </head>
 <body>
-  <header id="header">
-    <div class="container nav-container">
-      <div class="logo">
-  <a href="index.html">
+    <!-- Header & Navigation (GIS CO. LTD) -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
     <img src="assets/aroadlogo.jpg" alt="GIS CO. LTD Logo">
-  </a>
-</div>
-      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li class="dropdown">
-          <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-content">
-            <a href="services.html#general-construction">General Construction</a>
-            <a href="services.html#real-estate">Real Estate</a>
-            <a href="services.html#road-bridge">Road & Bridge</a>
-            <a href="services.html#gold-mining">Gold Mining</a>
-            <a href="services.html#agriculture">Agriculture</a>
-            <a href="services.html#medical-equipment">Medical Equipment</a>
-            <a href="services.html#safety-materials">Safety Materials</a>
-            <a href="services.html#import-export">Import & Export</a>
-            <a href="services.html#petroleum-supply">Petroleum Supply</a>
-            <a href="services.html#solar-installation">Solar Installation</a>
-            <a href="services.html#heavy-equipment">Heavy Equipment Hire</a>
-          </div>
-        </li>
-        <li><a href="projects.html" class="nav-link active">Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <div class="page-header" style="background: linear-gradient(rgba(44,44,44,0.6), rgba(44,44,44,0.6)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070') center/cover no-repeat;">
-    <div class="container"><h1>Our Projects</h1></div>
-  </div>
-
-  <!-- Featured Project -->
-  <section class="section-padding">
-    <div class="container">
-      <h2>Featured: Nile Road Construction</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p><strong>Location:</strong> Juba – Nimule, South Sudan</p>
-          <p><strong>Duration:</strong> 2023–2024</p>
-          <p>This 120 km tarmac road connects Juba to the Ugandan border, facilitating trade and transport. Our scope included earthworks, drainage, asphalt paving, and bridge construction over the Ayi river. The project was delivered 3 months ahead of schedule.</p>
-          <ul class="service-bullets" style="margin-top:20px;">
-            <li><i class="fas fa-check-circle"></i> 120 km dual carriageway</li>
-            <li><i class="fas fa-check-circle"></i> 4 major bridges</li>
-            <li><i class="fas fa-check-circle"></i> 15 culverts</li>
-          </ul>
+</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="services.html#construction">General Construction</a></li>
+                            <li><a href="services.html#realestate">Real Estate</a></li>
+                            <li><a href="services.html#roadbridge">Road & Bridge</a></li>
+                            <li><a href="services.html#mining">Gold Mining</a></li>
+                            <li><a href="services.html#agriculture">Agriculture & Livestock</a></li>
+                            <li><a href="services.html#medical">Medical Equipment</a></li>
+                            <li><a href="services.html#safety">Safety Materials (PPE)</a></li>
+                            <li><a href="services.html#additional">Additional Business</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="about-image"><img src="assets/aroadheavy.jpg" alt="Road construction"></div>
-      </div>
+    </header>
+
+    <!-- Page Header (unsplash) -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Our Projects</h1>
+            <p>Showcasing integrate solutions across South Sudan</p>
+        </div>
+    </section>
+
+    <!-- Projects Section (9 items with unsplash images) -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <p>A glimpse of our diverse portfolio</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+                <button class="filter-btn" data-filter="mining">Mining</button>
+                <button class="filter-btn" data-filter="agriculture">Agriculture</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- 1. Juba Commercial Plaza (commercial) -->
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1486406146923-c433d7c38f2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Juba Commercial Plaza">
+                    <div class="portfolio-overlay">
+                        <h3>Juba Commercial Plaza</h3>
+                        <p>8-story mixed-use building with retail & offices</p>
+                    </div>
+                </div>
+                <!-- 2. Bilpam Road Upgrade (infrastructure) -->
+                <div class="portfolio-item" data-category="infrastructure">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bilpam Road">
+                    <div class="portfolio-overlay">
+                        <h3>Bilpam Road Upgrade</h3>
+                        <p>12 km asphalt road with drainage systems</p>
+                    </div>
+                </div>
+                <!-- 3. Kapoeta Gold Mine (mining) -->
+                <div class="portfolio-item" data-category="mining">
+                    <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kapoeta Gold Mine">
+                    <div class="portfolio-overlay">
+                        <h3>Kapoeta Gold Mine</h3>
+                        <p>Open pit design & feasibility study</p>
+                    </div>
+                </div>
+                <!-- 4. Agricultural Equipment Supply (agriculture) -->
+                <div class="portfolio-item" data-category="agriculture">
+                    <img src="https://images.unsplash.com/photo-1574943320219-553eb673f3d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Farm Mechanization">
+                    <div class="portfolio-overlay">
+                        <h3>Farm Mechanization Program</h3>
+                        <p>Tractors & irrigation for 500 hectares</p>
+                    </div>
+                </div>
+                <!-- 5. UN Housing Complex (commercial/residential) -->
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="UN Housing">
+                    <div class="portfolio-overlay">
+                        <h3>UN Housing Complex</h3>
+                        <p>40 modern residences, completed 2024</p>
+                    </div>
+                </div>
+                <!-- 6. Nimule Bridge (infrastructure) -->
+                <div class="portfolio-item" data-category="infrastructure">
+                    <img src="https://images.unsplash.com/photo-1515162816998-0e4f9d1b6e4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nimule Bridge">
+                    <div class="portfolio-overlay">
+                        <h3>Nimule Bridge</h3>
+                        <p>Reinforced concrete bridge, 120 m span</p>
+                    </div>
+                </div>
+                <!-- 7. Juba Medical Equipment Supply (commercial) -->
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Medical Supply">
+                    <div class="portfolio-overlay">
+                        <h3>National Medical Supply</h3>
+                        <p>Distribution of hospital equipment nationwide</p>
+                    </div>
+                </div>
+                <!-- 8. Torit Mining Camp (mining) -->
+                <div class="portfolio-item" data-category="mining">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mining Camp">
+                    <div class="portfolio-overlay">
+                        <h3>Torit Exploration Camp</h3>
+                        <p>Site development for mining operations</p>
+                    </div>
+                </div>
+                <!-- 9. Yei Agricultural Training Center (agriculture) -->
+                <div class="portfolio-item" data-category="agriculture">
+                    <img src="https://images.unsplash.com/photo-1593113598335-cb59a0c7b1fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Training Center">
+                    <div class="portfolio-overlay">
+                        <h3>Yei Agribusiness Hub</h3>
+                        <p>Training & equipment distribution center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Showcase (example: Juba Commercial Plaza) -->
+    <section class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Project: Juba Commercial Plaza</h2>
+                <p>A landmark of modern engineering in South Sudan's capital</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>The Juba Commercial Plaza stands as a testament to our capability to deliver complex high‑rise structures in challenging environments. This 8‑story reinforced concrete building houses offices, retail spaces, and a rooftop terrace.</p>
+                    <p>Key project highlights:</p>
+                    <ul style="margin: 1.5rem 0; padding-left: 1.5rem;">
+                        <li>8 stories, 35 meters height – prime location in downtown Juba</li>
+                        <li>Advanced foundation engineering on compressible soils</li>
+                        <li>Full MEP installations including backup power and HVAC</li>
+                        <li>Curtain wall facade with energy‑efficient glazing</li>
+                        <li>Completed 6 months ahead of schedule</li>
+                    </ul>
+                    <p>This project exemplifies our ability to combine international standards with local expertise, delivering a structure that has become a new landmark for the city.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1486406146923-c433d7c38f2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Juba Commercial Plaza">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" style="background-image: url('https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(11,28,45,0.85);"></div>
+        <div style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto; text-align: center; color: white; padding: 3rem 1rem;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Inspired by Our Work?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Let's discuss how we can bring your project to life with the same level of expertise and dedication.</p>
+            <a href="contact.html" class="btn" style="background: var(--gold); color: var(--charcoal); padding: 1rem 3rem; font-weight: 600;">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Footer (GIS CO. LTD) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>GIS <span style="color: var(--gold);">CO. LTD</span></h3>
+                    <p>“We Integrate, You Benefit.” — Engineering, construction, trading and technical services across South Sudan.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Core Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#construction">General Construction</a></li>
+                        <li><a href="services.html#realestate">Real Estate</a></li>
+                        <li><a href="services.html#roadbridge">Road & Bridge</a></li>
+                        <li><a href="services.html#mining">Gold Mining</a></li>
+                        <li><a href="services.html#medical">Medical Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Northleaf Building, No. 28, Next to Former KCB, Munuki Hai Kuwait, Bilpam Road, Juba, South Sudan</li>
+                        <li><i class="fas fa-phone"></i> +211 913 131 604  |  +211 927 769 604  |  +211 982 103 081</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@giscompanyltd.com">info@giscompanyltd.com</a></li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00am - 5:00pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 General Integrate Services Company Ltd (GIS CO. LTD). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle (optional) -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
     </div>
-  </section>
 
-  <!-- Project Gallery (9 images) -->
-  <section class="section-padding bg-beige">
-    <div class="container">
-      <h2>Project Gallery</h2>
-      <div class="projects-grid">
-        <div class="project-item"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070" alt="Juba Tower"><div class="project-overlay"><h4>Juba Tower</h4></div></div>
-        <div class="project-item"><img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?q=80&w=2070" alt="Luxury Heights"><div class="project-overlay"><h4>Luxury Heights</h4></div></div>
-        <div class="project-item"><img src="assets/aroadhigh.jpg" alt="Bilpam Highway"><div class="project-overlay"><h4>Bilpam Highway</h4></div></div>
-        <div class="project-item"><img src="assets/aroadgold.jpg" alt="Kapoeta Mine"><div class="project-overlay"><h4>Kapoeta Mine</h4></div></div>
-        <div class="project-item"><img src="assets/aroadhih.jpg" alt="Ayii Bridge"><div class="project-overlay"><h4>Ayii Bridge</h4></div></div>
-        <div class="project-item"><img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=2070" alt="Solar Farm"><div class="project-overlay"><h4>Solar Farm</h4></div></div>
-        <div class="project-item"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070" alt="Industrial Warehouse"><div class="project-overlay"><h4>Industrial Warehouse</h4></div></div>
-        <div class="project-item"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2073" alt="Residential Estate"><div class="project-overlay"><h4>Residential Estate</h4></div></div>
-        <div class="project-item"><img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?q=80&w=2070" alt="Agri Complex"><div class="project-overlay"><h4>Agri Complex</h4></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Inspired by Our Work?</h2>
-      <p>Let’s create something remarkable together.</p>
-      <a href="contact.html" class="btn btn-gold">Start Your Project</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-<footer>
-  <div class="footer-grid">
-    
-    <!-- Company Info -->
-    <div class="footer-col">
-      <h4>GIS CO. LTD</h4>
-      <p>General Integrate Services Company Ltd is committed to engineering excellence and delivering innovative, reliable, and sustainable solutions across South Sudan.</p>
-      <p><strong>"We Integrate, You Benefit."</strong></p>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Our Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-
-    <!-- Services -->
-    <div class="footer-col">
-      <h4>Our Services</h4>
-      <ul>
-        <li><a href="services.html#general-construction">General Construction</a></li>
-        <li><a href="services.html#road-bridge">Road & Bridge Construction</a></li>
-        <li><a href="services.html#gold-mining">Gold Mining</a></li>
-        <li><a href="services.html#medical-equipment">Medical Equipment Supply</a></li>
-        <li><a href="services.html#solar-installation">Solar Installation</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact Info -->
-    <div class="footer-col">
-      <h4>Contact Information</h4>
-      <ul class="contact-info">
-        <li><i class="fas fa-map-marker-alt"></i> Northleaf Building, No. 28<br>
-            Hai Kuwait, Bilpam Road<br>
-            Juba, South Sudan</li>
-
-        <li><i class="fas fa-phone-alt"></i> +211 913 131 604</li>
-        <li><i class="fas fa-phone-alt"></i> +211 927 769 604</li>
-        <li><i class="fas fa-phone-alt"></i> +211 982 103 081</li>
-
-        <li><i class="fas fa-envelope"></i> 
-          <a href="mailto:giscompanyltd.com">info@giscompanyltd.com</a>
-        </li>
-      </ul>
-
-      <!-- Social Icons -->
-      <div class="social-icons">
-        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Bottom Copyright -->
-  <div class="copyright">
-    © 2026 General Integrate Services Company Ltd (GIS CO. LTD). All Rights Reserved. | We Integrate, You Benefit.
-  </div>
-</footer>
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
