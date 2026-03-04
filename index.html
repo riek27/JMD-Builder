@@ -8,13 +8,13 @@
   <!-- Google Fonts & Font Awesome are inside style.css -->
 </head>
 <body>
-  <!-- Header (same on all pages) -->
+  <!-- Header -->
   <header id="header">
     <div class="container nav-container">
       <div class="logo-text">GIS<span>.</span></div>
       <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
         <li class="dropdown">
           <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
@@ -59,7 +59,7 @@
           <p>With a legacy of engineering excellence, GIS CO. LTD stands as South Sudan's premier integrated services provider. We blend global standards with local expertise to deliver infrastructure, mining, and industrial solutions that build nations.</p>
           <a href="about.html" class="btn" style="margin-top: 20px;">Learn More About Us</a>
         </div>
-        <div class="about-image"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070" alt="Team" loading="lazy"></div>
+        <div class="about-image"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070" alt="Team working" loading="lazy"></div>
       </div>
     </div>
   </section>
@@ -112,9 +112,9 @@
     <div class="container">
       <h2>Recent Projects</h2>
       <div class="projects-grid" style="grid-template-columns: repeat(3,1fr);">
-        <div class="project-item"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070" alt="Project"><div class="project-overlay"><h4>Juba Tower</h4></div></div>
-        <div class="project-item"><img src="https://images.unsplash.com/photo-1544986887-8ad63d42f3e6?q=80&w=2070" alt="Project"><div class="project-overlay"><h4>Bilpam Highway</h4></div></div>
-        <div class="project-item"><img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2070" alt="Project"><div class="project-overlay"><h4>Kapoeta Gold</h4></div></div>
+        <div class="project-item"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070" alt="Juba Tower"><div class="project-overlay"><h4>Juba Tower</h4></div></div>
+        <div class="project-item"><img src="https://images.unsplash.com/photo-1544986887-8ad63d42f3e6?q=80&w=2070" alt="Bilpam Highway"><div class="project-overlay"><h4>Bilpam Highway</h4></div></div>
+        <div class="project-item"><img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2070" alt="Kapoeta Gold"><div class="project-overlay"><h4>Kapoeta Gold</h4></div></div>
       </div>
       <div style="text-align: center; margin-top: 40px;"><a href="projects.html" class="btn">See Full Gallery</a></div>
     </div>
@@ -129,20 +129,79 @@
     </div>
   </section>
 
-  <!-- Footer (same on all pages) -->
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-col"><h4>GIS CO. LTD</h4><p>Engineering excellence, integrating your success.</p></div>
-      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#general-construction">General Construction</a></li><li><a href="services.html#gold-mining">Mining</a></li><li><a href="services.html#medical-equipment">Medical Supply</a></li><li><a href="services.html#solar-installation">Solar</a></li></ul></div>
-      <div class="footer-col"><h4>Connect</h4><div class="social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+  <!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    
+    <!-- Company Info -->
+    <div class="footer-col">
+      <h4>GIS CO. LTD</h4>
+      <p>General Integrate Services Company Ltd is committed to engineering excellence and delivering innovative, reliable, and sustainable solutions across South Sudan.</p>
+      <p><strong>"We Integrate, You Benefit."</strong></p>
     </div>
-    <div class="copyright">© 2026 GIS CO. LTD — We Integrate, You Benefit.</div>
-  </footer>
 
-  <!-- Floating WhatsApp (optional) -->
-  <a href="https://wa.me/211923810102" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
 
-  <script src="script.js"></script>
+    <!-- Services -->
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="services.html#general-construction">General Construction</a></li>
+        <li><a href="services.html#road-bridge">Road & Bridge Construction</a></li>
+        <li><a href="services.html#gold-mining">Gold Mining</a></li>
+        <li><a href="services.html#medical-equipment">Medical Equipment Supply</a></li>
+        <li><a href="services.html#solar-installation">Solar Installation</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-col">
+      <h4>Contact Information</h4>
+      <ul class="contact-info">
+        <li><i class="fas fa-map-marker-alt"></i> Northleaf Building, No. 28<br>
+            Hai Kuwait, Bilpam Road<br>
+            Juba, South Sudan</li>
+
+        <li><i class="fas fa-phone-alt"></i> +211 913 131 604</li>
+        <li><i class="fas fa-phone-alt"></i> +211 927 769 604</li>
+        <li><i class="fas fa-phone-alt"></i> +211 982 103 081</li>
+
+        <li><i class="fas fa-envelope"></i> 
+          <a href="mailto:giscompanyltd.com">giscompanyltd.com</a>
+        </li>
+      </ul>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Copyright -->
+  <div class="copyright">
+    © 2026 General Integrate Services Company Ltd (GIS CO. LTD). All Rights Reserved. | We Integrate, You Benefit.
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/211923810102" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>
