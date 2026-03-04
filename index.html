@@ -1,289 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haven Homes | Crafting Luxury Dream Homes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIS CO. LTD – Home</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & Font Awesome are inside style.css -->
 </head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader-content">
-            <div class="logo-loader">
-                <h1>Haven</h1>
-                <div class="loader-line"></div>
-            </div>
-        </div>
+  <!-- Header (same on all pages) -->
+  <header id="header">
+    <div class="container nav-container">
+      <div class="logo-text">GIS<span>.</span></div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li class="dropdown">
+          <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <a href="services.html#general-construction">General Construction</a>
+            <a href="services.html#real-estate">Real Estate</a>
+            <a href="services.html#road-bridge">Road & Bridge</a>
+            <a href="services.html#gold-mining">Gold Mining</a>
+            <a href="services.html#agriculture">Agriculture</a>
+            <a href="services.html#medical-equipment">Medical Equipment</a>
+            <a href="services.html#safety-materials">Safety Materials</a>
+            <a href="services.html#import-export">Import & Export</a>
+            <a href="services.html#petroleum-supply">Petroleum Supply</a>
+            <a href="services.html#solar-installation">Solar Installation</a>
+            <a href="services.html#heavy-equipment">Heavy Equipment Hire</a>
+          </div>
+        </li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
     </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <h1>Haven</h1>
-                    <span class="logo-subtitle">HOMES</span>
-                </a>
-            </div>
-            
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            
-            <div class="nav-cta">
-                <a href="contact.html" class="cta-button">Start Your Journey</a>
-            </div>
-            
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+  <!-- Hero Section (bright background) -->
+  <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070') center/cover no-repeat;">
+    <div class="hero-content">
+      <h1>GENERAL INTEGRATE SERVICES COMPANY LTD</h1>
+      <div class="typing-container"><span class="typing" id="typing"></span></div>
+      <div class="btn-group">
+        <a href="services.html" class="btn">Our Services</a>
+        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section with 3D Background -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        
-        <!-- 3D Canvas Container -->
-        <div id="three-container" class="three-container"></div>
-        
-        <!-- Static fallback image (for mobile/performance) -->
-        <div class="hero-fallback"></div>
-        
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="hero-subtitle">ELEGANCE REDEFINED</div>
-                <h1 class="hero-title">Crafting Your <span class="highlight">Dream Home</span></h1>
-                <p class="hero-description">Where architectural mastery meets bespoke luxury, creating timeless residences that become your personal sanctuary.</p>
-                <div class="hero-buttons">
-                    <a href="contact.html" class="primary-btn">Begin Your Vision <i class="fas fa-arrow-right"></i></a>
-                    <a href="gallery.html" class="secondary-btn">View Our Portfolio</a>
-                </div>
-            </div>
-            
-            <div class="hero-scroll-indicator">
-                <div class="scroll-line"></div>
-                <span>Explore</span>
-            </div>
+  <!-- About Preview -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>With a legacy of engineering excellence, GIS CO. LTD stands as South Sudan's premier integrated services provider. We blend global standards with local expertise to deliver infrastructure, mining, and industrial solutions that build nations.</p>
+          <a href="about.html" class="btn" style="margin-top: 20px;">Learn More About Us</a>
         </div>
-    </section>
+        <div class="about-image"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070" alt="Team" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Featured Projects Section -->
-    <section class="section featured-projects">
-        <div class="section-header">
-            <div class="section-subtitle">Signature Creations</div>
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="divider"></div>
-        </div>
-        
-        <div class="projects-container">
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');">
-                    <div class="project-overlay">
-                        <span class="project-tag">Traditional</span>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Riverbend Estate</h3>
-                    <p>Greenwich, Connecticut</p>
-                    <a href="gallery.html" class="project-link">View Project <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');">
-                    <div class="project-overlay">
-                        <span class="project-tag">Contemporary</span>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Cliffside Villa</h3>
-                    <p>Malibu, California</p>
-                    <a href="gallery.html" class="project-link">View Project <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1600585154340-963ed7476d07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w-800&q=80');">
-                    <div class="project-overlay">
-                        <span class="project-tag">Modern</span>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Skyline Residence</h3>
-                    <p>New York, New York</p>
-                    <a href="gallery.html" class="project-link">View Project <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Why Choose Us -->
+  <section class="section-padding bg-beige">
+    <div class="container">
+      <h2>Why Choose Us</h2>
+      <div class="core-values" style="grid-template-columns: repeat(3,1fr);">
+        <div class="value-card"><i class="fas fa-hard-hat"></i><h4>Safety First</h4><p>Rigorous safety standards on every site.</p></div>
+        <div class="value-card"><i class="fas fa-gem"></i><h4>Uncompromised Quality</h4><p>Premium materials and expert craftsmanship.</p></div>
+        <div class="value-card"><i class="fas fa-handshake"></i><h4>Integrity</h4><p>Transparent, reliable partnerships.</p></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="stats-overlay"></div>
-        <div class="stats-container">
-            <div class="stat-item">
-                <div class="stat-number" data-count="25">0</div>
-                <div class="stat-text">Years of Excellence</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="180">0</div>
-                <div class="stat-text">Dream Homes Created</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="12">0</div>
-                <div class="stat-text">International Awards</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="50">0</div>
-                <div class="stat-text">Expert Craftsmen</div>
-            </div>
+  <!-- Services Preview -->
+  <section class="section-padding">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid" style="grid-template-columns: repeat(3,1fr);">
+        <div class="service-card">
+          <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070');"></div>
+          <div class="service-info">
+            <h3>General Construction</h3>
+            <p>Residential, commercial, roads, bridges, site clearing.</p>
+          </div>
         </div>
-    </section>
+        <div class="service-card">
+          <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2073');"></div>
+          <div class="service-info">
+            <h3>Gold Mining</h3>
+            <p>Exploration, extraction, and processing.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072');"></div>
+          <div class="service-info">
+            <h3>Solar Installation</h3>
+            <p>Off-grid and commercial solar solutions.</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;"><a href="services.html" class="btn">See All Services</a></div>
+    </div>
+  </section>
 
-    <!-- Services Preview -->
-    <section class="section services-preview">
-        <div class="section-header">
-            <div class="section-subtitle">Our Expertise</div>
-            <h2 class="section-title">Comprehensive Luxury Services</h2>
-            <div class="divider"></div>
-        </div>
-        
-        <div class="services-preview-container">
-            <div class="service-preview">
-                <div class="service-icon">
-                    <i class="fas fa-drafting-compass"></i>
-                </div>
-                <h3>Custom Design</h3>
-                <p>Bespoke architectural solutions tailored to your vision.</p>
-                <a href="services.html" class="service-link">Learn More</a>
-            </div>
-            
-            <div class="service-preview">
-                <div class="service-icon">
-                    <i class="fas fa-home"></i>
-                </div>
-                <h3>Construction</h3>
-                <p>Master craftsmanship with premium, sustainable materials.</p>
-                <a href="services.html" class="service-link">Learn More</a>
-            </div>
-            
-            <div class="service-preview">
-                <div class="service-icon">
-                    <i class="fas fa-couch"></i>
-                </div>
-                <h3>Interior Design</h3>
-                <p>Curated spaces balancing aesthetics and functionality.</p>
-                <a href="services.html" class="service-link">Learn More</a>
-            </div>
-        </div>
-        
-        <div class="text-center">
-            <a href="services.html" class="primary-btn">View All Services <i class="fas fa-chevron-right"></i></a>
-        </div>
-    </section>
+  <!-- Projects Preview -->
+  <section class="section-padding bg-beige">
+    <div class="container">
+      <h2>Recent Projects</h2>
+      <div class="projects-grid" style="grid-template-columns: repeat(3,1fr);">
+        <div class="project-item"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070" alt="Project"><div class="project-overlay"><h4>Juba Tower</h4></div></div>
+        <div class="project-item"><img src="https://images.unsplash.com/photo-1544986887-8ad63d42f3e6?q=80&w=2070" alt="Project"><div class="project-overlay"><h4>Bilpam Highway</h4></div></div>
+        <div class="project-item"><img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2070" alt="Project"><div class="project-overlay"><h4>Kapoeta Gold</h4></div></div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;"><a href="projects.html" class="btn">See Full Gallery</a></div>
+    </div>
+  </section>
 
-    <!-- Testimonials Preview -->
-    <section class="testimonials-preview">
-        <div class="testimonials-overlay"></div>
-        <div class="testimonials-preview-container">
-            <div class="testimonial-preview-content">
-                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
-                <p class="testimonial-text">"Haven Homes transformed our vision into a masterpiece. Their attention to detail and commitment to excellence is unparalleled."</p>
-                <div class="testimonial-author">
-                    <h4>Robert Chen</h4>
-                    <p>Greenwich Estate Project</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="text-center">
-            <a href="contact.html" class="secondary-btn">View More Testimonials</a>
-        </div>
-    </section>
+  <!-- Call to Action (common background) -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Start Your Project?</h2>
+      <p>Let’s build something extraordinary together.</p>
+      <a href="contact.html" class="btn btn-gold">Get Started</a>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <a href="index.html">
-                    <h1>Haven</h1>
-                    <span class="logo-subtitle">HOMES</span>
-                </a>
-                <p class="footer-tagline">Crafting Timeless Residences Since 1998</p>
-            </div>
-            
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Custom Home Design</a></li>
-                        <li><a href="services.html">Luxury Construction</a></li>
-                        <li><a href="services.html">Interior Design</a></li>
-                        <li><a href="services.html">Renovation</a></li>
-                        <li><a href="services.html">Project Management</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a href="#"><i class="fab fa-houzz"></i> Houzz</a></li>
-                        <li><a href="contact.html"><i class="fas fa-calendar"></i> Schedule Consultation</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Architectural Way, Beverly Hills, CA 90210</li>
-                        <li><i class="fas fa-phone"></i> (310) 555-0123</li>
-                        <li><i class="fas fa-envelope"></i> vision@havenhomes.com</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 Haven Homes. All rights reserved. | Luxury Custom Home Builder</p>
-            <p>Designed with <i class="fas fa-heart"></i> for extraordinary living</p>
-        </div>
-    </footer>
+  <!-- Footer (same on all pages) -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col"><h4>GIS CO. LTD</h4><p>Engineering excellence, integrating your success.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#general-construction">General Construction</a></li><li><a href="services.html#gold-mining">Mining</a></li><li><a href="services.html#medical-equipment">Medical Supply</a></li><li><a href="services.html#solar-installation">Solar</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><div class="social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+    </div>
+    <div class="copyright">© 2026 GIS CO. LTD — We Integrate, You Benefit.</div>
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        // Home page specific Three.js initialization
-        document.addEventListener('DOMContentLoaded', function() {
-            if (document.getElementById('three-container')) {
-                initThreeJS();
-            }
-        });
-    </script>
+  <!-- Floating WhatsApp (optional) -->
+  <a href="https://wa.me/211923810102" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+  <script src="script.js"></script>
 </body>
 </html>
