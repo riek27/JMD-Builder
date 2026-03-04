@@ -1,149 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GIS CO. LTD – Contact</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | GIS CO. LTD</title>
+    <!-- fonts & css (unchanged) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- small logo style (same as other pages) -->
+    <style>
+        .logo-text { font-size: 1.8rem; font-weight: 700; color: var(--gold, #c8a645); line-height: 1.2; }
+        .logo-text span { color: #fff; font-weight: 400; font-size: 1.2rem; display: block; }
+        @media (min-width: 768px) { .logo-text span { display: inline; margin-left: 0.5rem; } }
+    </style>
 </head>
 <body>
-  <header id="header">
-    <div class="container nav-container">
-      <div class="logo">
-  <a href="index.html">
+    <!-- Header & Navigation (GIS CO. LTD) -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
     <img src="assets/aroadlogo.jpg" alt="GIS CO. LTD Logo">
-  </a>
-</div>
-      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li class="dropdown">
-          <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-content">
-            <a href="services.html#general-construction">General Construction</a>
-            <a href="services.html#real-estate">Real Estate</a>
-            <a href="services.html#road-bridge">Road & Bridge</a>
-            <a href="services.html#gold-mining">Gold Mining</a>
-            <a href="services.html#agriculture">Agriculture</a>
-            <a href="services.html#medical-equipment">Medical Equipment</a>
-            <a href="services.html#safety-materials">Safety Materials</a>
-            <a href="services.html#import-export">Import & Export</a>
-            <a href="services.html#petroleum-supply">Petroleum Supply</a>
-            <a href="services.html#solar-installation">Solar Installation</a>
-            <a href="services.html#heavy-equipment">Heavy Equipment Hire</a>
-          </div>
-        </li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="contact.html" class="nav-link active">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <div class="page-header" style="background: linear-gradient(rgba(44,44,44,0.6), rgba(44,44,44,0.6)), url('https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=2070') center/cover no-repeat;">
-    <div class="container"><h1>Contact Us</h1></div>
-  </div>
-
-  <section class="section-padding">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-form">
-          <input type="text" placeholder="Your Name">
-          <input type="email" placeholder="Email">
-          <input type="tel" placeholder="Phone">
-          <textarea rows="5" placeholder="Message"></textarea>
-          <button class="btn" style="width:100%;">Send Inquiry</button>
+</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="services.html#construction">General Construction</a></li>
+                            <li><a href="services.html#realestate">Real Estate</a></li>
+                            <li><a href="services.html#roadbridge">Road & Bridge</a></li>
+                            <li><a href="services.html#mining">Gold Mining</a></li>
+                            <li><a href="services.html#agriculture">Agriculture & Livestock</a></li>
+                            <li><a href="services.html#medical">Medical Equipment</a></li>
+                            <li><a href="services.html#safety">Safety Materials (PPE)</a></li>
+                            <li><a href="services.html#additional">Additional Business</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="contact-details">
-          <p><i class="fas fa-map-marker-alt"></i> Northleaf Building, No. 28, Next to Former KCB, Munuki, Hai Kuwait, Bilpam Road, Juba, South Sudan</p>
-          <p><i class="fas fa-phone"></i> <a href="tel:+211913131604">+211 913 131 604</a><br><a href="tel:+211927769604">+211 927 769 604</a><br><a href="tel:+211982103081">+211 982 103 081</a></p>
-          <p><i class="fas fa-envelope"></i> <a href="mailto:info@giscompanyltd.com">info@giscompanyltd.com</a></p>
-          <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.190262113431!2d31.584725!3d4.851905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17128b1c1f3b3b3b%3A0x8b3b3b3b3b3b3b3b!2sJuba!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
+    </header>
+
+    <!-- Page Header (unsplash: office/contact) -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Contact Us</h1>
+            <p>We integrate, you benefit — reach out to discuss your project</p>
         </div>
-      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Our team is ready to provide expert solutions tailored to your needs</p>
+            </div>
+            <div class="contact-container">
+                <!-- Contact Information Block (GIS CO. LTD details) -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Head Office</h4>
+                                <p>Northleaf Building, No. 28<br>Next to Former KCB, Munuki Hai Kuwait<br>Bilpam Road, Juba, Central Equatoria State<br>South Sudan</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+211 913 131 604</p>
+                                <p>+211 927 769 604</p>
+                                <p>+211 982 103 081</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@giscompanyltd.com">info@giscompanyltd.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                <p>Saturday & Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Contact Buttons (updated) -->
+                    <div style="display: flex; gap: 1rem; margin: 2rem 0; flex-wrap: wrap;">
+                        <a href="tel:+211913131604" class="btn" style="background: var(--gold); color: var(--charcoal); display: inline-flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-phone-alt"></i> Call +211 913 131 604
+                        </a>
+                        <a href="mailto:info@giscompanyltd.com" class="btn" style="background: var(--charcoal); color: var(--white); display: inline-flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-envelope"></i> Send Email
+                        </a>
+                    </div>
+
+                    <!-- Social links omitted – not listed in company profile -->
+                </div>
+
+                <!-- Contact Form (Netlify, with GIS service options) -->
+                <div class="contact-form">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+                        <!-- Required hidden field for Netlify -->
+                        <input type="hidden" name="form-name" value="contact">
+
+                        <!-- Honeypot anti-spam field -->
+                        <p style="display:none;">
+                            <label>Don’t fill this out if you're human:
+                                <input name="bot-field">
+                            </label>
+                        </p>
+
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Your Phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="">Select a service</option>
+                                <option value="general-construction">General Construction</option>
+                                <option value="real-estate">Real Estate</option>
+                                <option value="road-bridge">Road & Bridge</option>
+                                <option value="gold-mining">Gold Mining</option>
+                                <option value="agriculture">Agriculture & Livestock</option>
+                                <option value="medical-equipment">Medical Equipment</option>
+                                <option value="safety-ppe">Safety Materials (PPE)</option>
+                                <option value="additional">Additional Business</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project or inquiry" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
+
+                        <!-- Success Message (hidden by default, shown via JS) -->
+                        <p id="formMessage" class="form-message" style="display:none;">
+                            Thank you! Your message has been sent successfully.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (updated with GIS head office location) -->
+    <section class="about" style="padding: 0;">
+        <div class="container">
+            <div style="height: 400px; width: 100%; background-color: #f5f2ed; border-radius: 2px; overflow: hidden;">
+                <!-- Approximate coordinates for Northleaf Building, Juba (adjust if needed) -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.750331245523!2d31.5795!3d4.8517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNTEnMDYuMSJOIDMxwrAzNCc0Ni4yIkU!5e0!3m2!1sen!2s!4v1687459000000!5m2!1sen!2s" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div style="text-align: center; margin-top: 1rem;">
+                <p style="color: var(--charcoal);"><i class="fas fa-map-pin" style="color: var(--gold);"></i> Northleaf Building, No. 28, Next to Former KCB, Munuki Hai Kuwait, Bilpam Road, Juba, South Sudan</p>
+                <a href="https://maps.google.com/?q=Northleaf+Building+Juba+South+Sudan" target="_blank" class="btn" style="margin-top: 0.5rem; background: var(--charcoal); color: var(--white);">Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="services" style="padding: 4rem 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's bring your vision to life with our integrate approach</p>
+            </div>
+            <div style="text-align: center;">
+                <a href="tel:+211913131604" class="btn" style="margin-right: 1rem; background: var(--gold); color: var(--charcoal);"><i class="fas fa-phone-alt"></i> Call +211 913 131 604</a>
+                <a href="mailto:info@giscompanyltd.com" class="btn" style="background: var(--charcoal); color: var(--white);"><i class="fas fa-envelope"></i> Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (GIS CO. LTD, no social links) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>GIS <span style="color: var(--gold);">CO. LTD</span></h3>
+                    <p>“We Integrate, You Benefit.” — Engineering, construction, trading and technical services across South Sudan.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Core Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#construction">General Construction</a></li>
+                        <li><a href="services.html#realestate">Real Estate</a></li>
+                        <li><a href="services.html#roadbridge">Road & Bridge</a></li>
+                        <li><a href="services.html#mining">Gold Mining</a></li>
+                        <li><a href="services.html#medical">Medical Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Northleaf Building, No. 28, Next to Former KCB, Munuki Hai Kuwait, Bilpam Road, Juba, South Sudan</li>
+                        <li><i class="fas fa-phone"></i> +211 913 131 604  |  +211 927 769 604  |  +211 982 103 081</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@giscompanyltd.com">info@giscompanyltd.com</a></li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00am - 5:00pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 General Integrate Services Company Ltd (GIS CO. LTD). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle (optional) -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
     </div>
-  </section>
 
-  <!-- Call to Action -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>We’re Here to Help</h2>
-      <p>Reach out today for a consultation.</p>
-      <a href="contact.html" class="btn btn-gold">Get in Touch</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-<footer>
-  <div class="footer-grid">
-    
-    <!-- Company Info -->
-    <div class="footer-col">
-      <h4>GIS CO. LTD</h4>
-      <p>General Integrate Services Company Ltd is committed to engineering excellence and delivering innovative, reliable, and sustainable solutions across South Sudan.</p>
-      <p><strong>"We Integrate, You Benefit."</strong></p>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Our Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-
-    <!-- Services -->
-    <div class="footer-col">
-      <h4>Our Services</h4>
-      <ul>
-        <li><a href="services.html#general-construction">General Construction</a></li>
-        <li><a href="services.html#road-bridge">Road & Bridge Construction</a></li>
-        <li><a href="services.html#gold-mining">Gold Mining</a></li>
-        <li><a href="services.html#medical-equipment">Medical Equipment Supply</a></li>
-        <li><a href="services.html#solar-installation">Solar Installation</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact Info -->
-    <div class="footer-col">
-      <h4>Contact Information</h4>
-      <ul class="contact-info">
-        <li><i class="fas fa-map-marker-alt"></i> Northleaf Building, No. 28<br>
-            Hai Kuwait, Bilpam Road<br>
-            Juba, South Sudan</li>
-
-        <li><i class="fas fa-phone-alt"></i> +211 913 131 604</li>
-        <li><i class="fas fa-phone-alt"></i> +211 927 769 604</li>
-        <li><i class="fas fa-phone-alt"></i> +211 982 103 081</li>
-
-        <li><i class="fas fa-envelope"></i> 
-          <a href="mailto:giscompanyltd.com">info@giscompanyltd.com</a>
-        </li>
-      </ul>
-
-      <!-- Social Icons -->
-      <div class="social-icons">
-        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Bottom Copyright -->
-  <div class="copyright">
-    © 2026 General Integrate Services Company Ltd (GIS CO. LTD). All Rights Reserved. | We Integrate, You Benefit.
-  </div>
-</footer>
-
-
-<script src="script.js"></script>
+    <!-- Main Script (unchanged) -->
+    <script src="script.js"></script>
 </body>
 </html>
